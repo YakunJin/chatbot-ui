@@ -7,14 +7,14 @@
 
 ## Project Description
 
-Chatbot UI project based on React framework, Node 16+, including following functionality
+Chatbot UI project based on React framework, Node 16+, with following functionality
 - PC and Mobile supported
 - Greeting message
 - Showing example question
 - Send and recieve messages
 - Positive and Negative review
 
-## Config
+## Configuration
 
 - Optional configuration based on API mode or self-defined data
     - For self-definition mode, data structure can be modified from ```chatRoomDefaultStartModel``` in ```Config.ts```. ```ChatbotDefaultStartModel``` is default model.
@@ -29,7 +29,7 @@ Chatbot UI project based on React framework, Node 16+, including following funct
 ## How to run in dev mode and mock response
 - npm run start
 - For response mocking，start up Mockoon, load and config ```chatbot_management_mock.json``` file
-- open http://localhost:3000/?chatbot_id=xxx, chatbot_id should be provided
+- Open http://localhost:3000/?chatbot_id=xxx, chatbot_id should be provided
 
 ## Building for production
 - npm run build
