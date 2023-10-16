@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
-import { ConfigProvider, theme, Breadcrumb, Layout, Menu, message } from 'antd';
+import { ConfigProvider, theme, message } from 'antd';
 import { useNavigate, useRoutes, useLocation } from "react-router-dom";
 import { MessageOutlined } from '@ant-design/icons';
 import { ItemType, SubMenuType } from 'antd/es/menu/hooks/useItems';
 import ChatRoom from './pages/ChatRoom';
-import IconBot1 from './res/icon_bot_1.png';
 import { BreadcrumbItemType } from 'antd/es/breadcrumb/Breadcrumb';
 
-const { Header, Content, Sider } = Layout;
 interface IPage {
   path: string,
   redirect?: string,

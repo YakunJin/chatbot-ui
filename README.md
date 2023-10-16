@@ -1,35 +1,40 @@
-## Chatbot聊天室UI
+## A lightweight Chatbot UI
 ### PC
 ![image](pc.jpeg)
 
 ### 移动端
 ![image](mobile.jpeg)
 
-## 项目描述
+## Project Description
 
-Chatbot项目, Node 16+
+Chatbot UI project based on React framework, Node 16+, including following functionality
+- PC and Mobile supported
+- Greeting message
+- Showing example question
+- Send and recieve messages
+- Positive and Negative review
 
-## 配置
+## Config
 
-- 机器人聊天室配置的信息支持API获取，或者自定义
-    - 若自定义配置信息，可更改Config.ts文件的chatRoomDefaultStartModel，默认model是ChatbotDefaultStartModel；
-    - 若从API获取，Config.ts文件中的chatStartApiUrl需提供对应api url
-- Config.chatMessageSendApi： 可配置发送消息API的URL
-- Config.chatMessageEvaluateApi： 可配置聊天消息用户反馈的API地址
+- Optional configuration based on API mode or self-defined data
+    - For self-definition mode, data structure can be modified from ```chatRoomDefaultStartModel``` in ```Config.ts```. ```ChatbotDefaultStartModel``` is default model.
+    - For API mode, ```chatStartApiUrl``` should be provided in ```Config.ts``` file based on the project API URL. Notice that in this mode, the URL list below should also be provided.
+        - Config.chatMessageSendApi：The API url that performs the message sending.
+        - Config.chatMessageEvaluateApi： The API url that performs the action when user click like/dislike review.
 
-## 相关Model与interface
- - 如需要可更改model目录中的相关模型
- - ChatBotServer 封装了聊天室相关操作，如需要可更改对应实现或修改方法入参与返回的interface
+## Related "Model" and "Interface"
+ - Related model could be change in ```Model``` directory
+ - Chatroom related function is wrapped in ```ChatBotServer```.
 
-## 启动与mock调试
+## How to run in dev mode and mock response
 - npm run start
-- 如需要mock API返回，启动Mockoon, 配置并加载```chatbot_management_mock.json```文件
-- 页面访问，http://localhost:3000/?chatbot_id=xxx, chatbot_id需提供
+- For response mocking，start up Mockoon, load and config ```chatbot_management_mock.json``` file
+- open http://localhost:3000/?chatbot_id=xxx, chatbot_id should be provided
 
-## 打包
+## Building for production
 - npm run build
 
-## 相关技术与文档
+## Reference
 
 - [Mockoon](https://mockoon.com/docs/latest/about/)
 - [ReactHook](https://legacy.reactjs.org/docs/hooks-intro.html)
