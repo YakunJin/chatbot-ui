@@ -2,7 +2,7 @@
 ### PC
 ![image](pc.jpeg)
 
-### 移动端
+### Mobile
 ![image](mobile.jpeg)
 
 ## Project Description
